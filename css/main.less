@@ -3,24 +3,27 @@
 @import 'styles/grid.less';
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
   background: #2BB293;
 }
 
 #active{
-	text-decoration: underline line-through;
+	text-decoration: line-through;
+	font-weight: bold;
+	font-family: @headingfontfamily;
 }
 
 header{
 	&#top{
-  		height:150px;
+  		height:75px;
   		.column(12);
-  		background-color:#D44072;
+  		background-color:@headerBackground;
   		h1 {
   			a {
-
+  				color: @headerColor;
+  				margin: 5px 0 5px 10px;
   				&:hover {
   					text-decoration:none;
   					font-family: @bodyfontfamily;
@@ -28,19 +31,25 @@ header{
   			}
   		}
   		nav {
+  			.column(12);
+  			height:13px;
+  			border-bottom: 5px solid @navBorderColor;
+  			text-align: center;
   			ul {
+  				height:16px;
+  				margin: 0 auto;
   				li {
-
+  					display: inline-block;
+  					color: @color1;
   				}
   			}
   		}
 	}
 }
-
-article#maincolumn {
-  .column(8);
+aside#sidebar {
+  .column(4);
 }
 
-section#sidebar {
-  .column(4);
+section#maincolumn {
+  .column(8);
 }
