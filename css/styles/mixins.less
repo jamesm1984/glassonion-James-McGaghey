@@ -1,5 +1,6 @@
 @import 'brand.less';
 @import 'typography.less';
+@import 'grid.less';
 
 .box-sizing () {
   -webkit-box-sizing: border-box;
@@ -12,4 +13,10 @@
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
   border-radius:         @radius;
+}
+
+.header-background (){
+	height:125px;
+  	.column(12);
+  	background-size: 100% 100%;
 }
