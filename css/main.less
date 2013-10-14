@@ -94,10 +94,48 @@ aside#sidebar {
 }
 
 section{
+	&#maincolumn{
+		.column(12);
+		margin-top: 10px;
+		max-height: 606px;
+		overflow: auto;
+		h2{
+			margin-bottom: 10px;
+		}
+		ul{
+			li{
+				.border-radius;
+				background: @color2;
+				.column(6);
+				margin-bottom: 10px;
+				iframe{
+					.column(12);
+				}
+
+				article{
+					.column(12);
+					margin: 10px 0 5px 0;
+					cursor: default;
+					h3{
+						.column(12);
+						color: @color3;
+					}
+					p{
+						line-height: 30px;
+						.column(4);
+						text-align: center;
+					}
+				}
+
+
+			}
+		}
+	}
 	&#aboutLorde{
 		.column(12);
 		max-height:606px;
 		margin-top: 10px;
+		cursor: default;
 		img{
 			.column(3);
 			.border-radius;
@@ -106,17 +144,18 @@ section{
 		P{
 			color: @color2;
 			line-height: 30px;
-			margin-top: 10px;
-			font-size: @basefontsize*1.5;
+			margin: 10px 0;
+			font-size: @basefontsize*1.25;
 			a{
 				color: @color3;
 			}
 		}
 	}
-	&#maincolumn {
+	&#tourcolumn {
   		.column(7);
   		max-height: 606px;
   		overflow: auto;
+  		cursor: default;
   		h2{
   			margin: 10px 0;
   		}
@@ -193,6 +232,7 @@ footer{
 	text-align: center;
 	p{
 		padding: 5px;
-		font-size: @basefontsize*.7
+		font-size: @basefontsize*.7;
+		cursor:default;
 	}
 }

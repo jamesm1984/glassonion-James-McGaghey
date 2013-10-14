@@ -142,6 +142,58 @@ aside#sidebar img#tour {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+section#maincolumn {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin-top: 10px;
+  max-height: 606px;
+  overflow: auto;
+}
+section#maincolumn h2 {
+  margin-bottom: 10px;
+}
+section#maincolumn ul li {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #000000;
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  margin-bottom: 10px;
+}
+section#maincolumn ul li iframe {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+section#maincolumn ul li article {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin: 10px 0 5px 0;
+  cursor: default;
+}
+section#maincolumn ul li article h3 {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  color: #d44072;
+}
+section#maincolumn ul li article p {
+  line-height: 30px;
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  text-align: center;
+}
 section#aboutLorde {
   display: inline;
   float: left;
@@ -149,6 +201,7 @@ section#aboutLorde {
   margin: 0 1.0416666666666665%;
   max-height: 606px;
   margin-top: 10px;
+  cursor: default;
 }
 section#aboutLorde img {
   display: inline;
@@ -163,40 +216,41 @@ section#aboutLorde img {
 section#aboutLorde P {
   color: #000000;
   line-height: 30px;
-  margin-top: 10px;
-  font-size: 24px;
+  margin: 10px 0;
+  font-size: 20px;
 }
 section#aboutLorde P a {
   color: #d44072;
 }
-section#maincolumn {
+section#tourcolumn {
   display: inline;
   float: left;
   width: 56.25%;
   margin: 0 1.0416666666666665%;
   max-height: 606px;
   overflow: auto;
-}
-section#maincolumn h2 {
-  margin: 10px 0;
-}
-section#maincolumn ul {
-  display: inline;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
-}
-section#maincolumn ul li {
-  display: inline;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
-  margin: 10px 0;
-}
-section#maincolumn ul li article.tourEvent {
   cursor: default;
 }
-section#maincolumn ul li article.tourEvent section.tourDate {
+section#tourcolumn h2 {
+  margin: 10px 0;
+}
+section#tourcolumn ul {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+section#tourcolumn ul li {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin: 10px 0;
+}
+section#tourcolumn ul li article.tourEvent {
+  cursor: default;
+}
+section#tourcolumn ul li article.tourEvent section.tourDate {
   display: inline;
   float: left;
   width: 22.916666666666664%;
@@ -211,43 +265,43 @@ section#maincolumn ul li article.tourEvent section.tourDate {
   margin-bottom: 10px;
   background: black;
 }
-section#maincolumn ul li article.tourEvent section.tourDate h2 {
+section#tourcolumn ul li article.tourEvent section.tourDate h2 {
   color: white;
   line-height: 35px;
 }
-section#maincolumn ul li article.tourEvent section.tourDate h2 span {
+section#tourcolumn ul li article.tourEvent section.tourDate h2 span {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   color: white;
 }
-section#maincolumn ul li article.tourEvent section.tourDate p {
+section#tourcolumn ul li article.tourEvent section.tourDate p {
   margin-top: -5px;
   font-size: 16px;
   line-height: 15px;
 }
-section#maincolumn ul li article.tourEvent section.tourDate span.year {
+section#tourcolumn ul li article.tourEvent section.tourDate span.year {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   color: #3cbdc8;
 }
-section#maincolumn ul li article.tourEvent aside.tourInfo h3 {
+section#tourcolumn ul li article.tourEvent aside.tourInfo h3 {
   display: inline;
   float: left;
   width: 72.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
-section#maincolumn ul li article.tourEvent aside.tourInfo h3 span {
+section#tourcolumn ul li article.tourEvent aside.tourInfo h3 span {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   color: #d44072;
 }
-section#maincolumn ul li article.tourEvent aside.tourInfo button {
+section#tourcolumn ul li article.tourEvent aside.tourInfo button {
   display: inline;
   float: left;
   width: 39.58333333333333%;
@@ -260,7 +314,7 @@ section#maincolumn ul li article.tourEvent aside.tourInfo button {
   background: #000000;
   margin-top: 40px;
 }
-section#maincolumn ul li article.tourEvent aside.tourInfo button a {
+section#tourcolumn ul li article.tourEvent aside.tourInfo button a {
   padding-top: 3px;
   display: block;
   width: 100%;
@@ -277,4 +331,5 @@ footer {
 footer p {
   padding: 5px;
   font-size: 11.2px;
+  cursor: default;
 }
