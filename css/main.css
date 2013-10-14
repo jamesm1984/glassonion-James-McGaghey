@@ -38,6 +38,7 @@ body:after {
 body:after {
   clear: both;
 }
+/* All images are named from the site at which they were taken from any edited images are also named accordingly with (edited) at the end*/
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -141,6 +142,33 @@ aside#sidebar img#tour {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+section#aboutLorde {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  max-height: 606px;
+  margin-top: 10px;
+}
+section#aboutLorde img {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+section#aboutLorde P {
+  color: #000000;
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+section#aboutLorde P a {
+  color: #d44072;
+}
 section#maincolumn {
   display: inline;
   float: left;
@@ -178,8 +206,9 @@ section#maincolumn ul li article.tourEvent section.tourDate {
   border-radius: 5px;
   width: 100px;
   height: 100px;
-  padding-bottom: 25px;
   text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
   background: black;
 }
 section#maincolumn ul li article.tourEvent section.tourDate h2 {
@@ -221,7 +250,7 @@ section#maincolumn ul li article.tourEvent aside.tourInfo h3 span {
 section#maincolumn ul li article.tourEvent aside.tourInfo button {
   display: inline;
   float: left;
-  width: 22.916666666666664%;
+  width: 39.58333333333333%;
   margin: 0 1.0416666666666665%;
   height: 30px;
   float: right;

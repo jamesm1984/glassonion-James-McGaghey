@@ -2,6 +2,7 @@
 @import 'styles/typography.less';
 @import 'styles/grid.less';
 @import 'styles/mixins.less';
+/* All images are named from the site at which they were taken from any edited images are also named accordingly with (edited) at the end*/
 
 .container {
   max-width: 960px;
@@ -92,45 +93,66 @@ aside#sidebar {
   	}
 }
 
-section#maincolumn {
-  .column(7);
-  max-height: 606px;
-  overflow: auto;
-  h2{
-  	margin: 10px 0;
-  }
-  ul{
-  	.column(12);
-  	li{
-  		.column(12);
-  		margin: 10px 0;
-  		article.tourEvent{
-  			cursor: default;
-  			section.tourDate{
-  				.column(3);
-  				.border-radius;
-  				width: 100px;
-  				height: 100px;
-  				padding-bottom: 25px; 
-  				text-align: center;
-  				background: black;
-  				h2{
-  					color: white;
-  					line-height: 35px;
-  					span{
-  						.column(12);
-  						color: white;
-  					}
-  				}
-  				p{
-  					margin-top: -5px;
-  					font-size: @basefontsize;
-  					line-height: 15px;
-  				}
-  				span.year{
-  					.column(12);
-  					color: @color1;
-  				}
+section{
+	&#aboutLorde{
+		.column(12);
+		max-height:606px;
+		margin-top: 10px;
+		img{
+			.column(3);
+			.border-radius;
+			margin-top: 10px;
+		}
+		P{
+			color: @color2;
+			line-height: 30px;
+			margin-top: 10px;
+			font-size: @basefontsize*1.5;
+			a{
+				color: @color3;
+			}
+		}
+	}
+	&#maincolumn {
+  		.column(7);
+  		max-height: 606px;
+  		overflow: auto;
+  		h2{
+  			margin: 10px 0;
+  		}
+  		ul{
+  			.column(12);
+  			li{
+  				.column(12);
+  				margin: 10px 0;
+  				article.tourEvent{
+  					cursor: default;
+  					section.tourDate{
+  						.column(3);
+  						.border-radius;
+  						width: 100px;
+  						height: 100px;
+  						text-align: center;
+  						padding-bottom: 25px;
+  						margin-bottom: 10px;
+  						background: black;
+  						h2{
+  							color: white;
+  							line-height: 35px;
+  							span{
+  								.column(12);
+  								color: white;
+  							}
+  						}
+  						p{
+  							margin-top: -5px;
+  							font-size: @basefontsize;
+  							line-height: 15px;
+  						}
+  						span.year{
+  							.column(12);
+  							color: @color1;
+  						}
   			}
 
   			aside.tourInfo{
@@ -143,7 +165,7 @@ section#maincolumn {
   				}
 
   				button{
-  					.column(3);
+  					.column(5);
   					height: 30px;
   					float: right;
   					.border-radius;
@@ -161,12 +183,13 @@ section#maincolumn {
   			
   		}
   	}
-  }
+	}
+	}
 }
 
 footer{
 	.column(12);
-	background: @headerBackground;
+	background: @color2;
 	text-align: center;
 	p{
 		padding: 5px;
