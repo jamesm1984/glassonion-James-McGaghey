@@ -16,7 +16,7 @@ h2 {
 }
 h3 {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 24px;
 }
 a {
   color: #3cbdc8;
@@ -137,16 +137,105 @@ aside#sidebar {
 aside#sidebar img#tour {
   margin: 10px 0;
   width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 section#maincolumn {
   display: inline;
   float: left;
   width: 56.25%;
   margin: 0 1.0416666666666665%;
+  max-height: 606px;
   overflow: auto;
 }
 section#maincolumn h2 {
   margin: 10px 0;
+}
+section#maincolumn ul {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+section#maincolumn ul li {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  margin: 10px 0;
+}
+section#maincolumn ul li article.tourEvent {
+  cursor: default;
+}
+section#maincolumn ul li article.tourEvent section.tourDate {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: black;
+}
+section#maincolumn ul li article.tourEvent section.tourDate h2 {
+  color: white;
+  line-height: 35px;
+}
+section#maincolumn ul li article.tourEvent section.tourDate h2 span {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  color: white;
+}
+section#maincolumn ul li article.tourEvent section.tourDate p {
+  margin-top: -5px;
+  font-size: 16px;
+  line-height: 15px;
+}
+section#maincolumn ul li article.tourEvent section.tourDate span.year {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  color: #3cbdc8;
+}
+section#maincolumn ul li article.tourEvent aside.tourInfo h3 {
+  display: inline;
+  float: left;
+  width: 72.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+section#maincolumn ul li article.tourEvent aside.tourInfo h3 span {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  color: #d44072;
+}
+section#maincolumn ul li article.tourEvent aside.tourInfo button {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  height: 30px;
+  float: right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #000000;
+  margin-top: 40px;
+}
+section#maincolumn ul li article.tourEvent aside.tourInfo button a {
+  padding-top: 3px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 footer {
   display: inline;
