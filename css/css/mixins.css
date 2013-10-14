@@ -1,0 +1,27 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+p {
+  color: #3CBDC8;
+}
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  color: #000000;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline line-through;
+  font-weight: bold;
+}

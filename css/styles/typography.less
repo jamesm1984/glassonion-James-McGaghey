@@ -1,16 +1,17 @@
-@import: 'brand.less';
+@import 'brand.less';
 
 body {
   font-family: @bodyfontfamily;
 }
 
 p {
-  
+  color:#3CBDC8;
 }
 
 h1 {
   font-family: @headingfontfamily;
-  font-size: @basefontsize * 2; // Insert number that will resize accordingly based on stylesheet. 
+  font-size: @basefontsize * 2; 
+  color:@color1;
 }
 
 h2 {
@@ -24,8 +25,10 @@ h3 {
 }
 
 a {
-  //insert styling
+  color:@color1;
+  text-decoration: none;
   &:hover {
-    //insert styling
+    text-decoration:underline line-through;
+    font-weight: bold;
   }
 }
