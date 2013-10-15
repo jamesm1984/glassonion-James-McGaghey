@@ -5,100 +5,80 @@
 /* All images are named from the site at which they were taken from any edited images are also named accordingly with (edited) at the end*/
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
-  background: #2BB293;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: @color5;
 }
 
 #active{
-	text-decoration: line-through;
-	font-weight: bold;
-	font-family: @headingfontfamily;
+	.active-indicator;
 }
 
 header{
 	h1 {
-		.column(9);
-		
-  			a {
-  				margin: 5px 0 5px 10px;
-  				color: @headerColor;
-  				&:hover {
-  					text-decoration:none;
-  					font-family: @bodyfontfamily;
-  				}
-  			}
-  		}
-  		aside{
-  			.column(3);
-  			background: url("../Images/getOnItunes.jpg") no-repeat;
-  			background-size: 100% 100%;
-  			text-indent: -999999px;
-  			border-radius: 16%;
-  			height:130px;
-  			margin-top: 5px;
-  			a{
-  				display: block;
-  				width: 100%;
-  				height:100%;
-  			}
+		.column(6);
+		padding-top: 50px;
+		padding-left: 50px;
+		a {
+			color: @color4;
+			&:hover {
+				text-decoration:none;
+				font-family: @bodyfontfamily;
+			}
+		}
+			}
+			aside{
+				float: right;
+				background: url("../Images/getOnItunes.jpg") no-repeat;
+				background-size: 100% 100%;
+				text-indent: -999999px;
+				border-radius: 16%;
+				width: 130px;
+				height:130px;
+				margin-top: 5px;
+				margin-right: 10px;
+				a{
+					.full-size-link;
+				}
 
-  		}
-  		nav {
-  			.column(12);
-  			height:21px;
-  			border-bottom: 2px solid @navBorderColor;
-  			text-align: center;
-  			margin-top: 9px;
-  			ul {
-  				height:16px;
-  				margin: 0 auto;
-  				li {
-  					display: inline-block;
-  					color: @color1;
-  					font-size: @basefontsize*1.5;
-  					margin: 0 5px;
-  				}
-  			}
-  		}
-	&#top{
-		height:175px;
-  		.column(12);
-  		background:url("../Images/acidstag(dot)com(edited).jpg") no-repeat;
-  		background-size: 100% 100%;
-  	}
-  	&#top-tour{
-  		height:175px;
-  		.column(12);
-  		background:url("../Images/buzznet(dot)com(edited).jpg") no-repeat;
-  		background-size: 100% 100%;
-  	}
-  	&#top-about{
-  		height:175px;
-  		.column(12);
-  		background:url("../Images/themusic(dot)com(dot)au(edited).jpg") no-repeat;
-  		background-size: 100% 100%;
-  	}
+			}
+			nav {
+				.column(12);
+				height:18px;
+				border-bottom: 3px solid @color3;
+				text-align: center;
+				margin-top: 9px;
+				ul {
+					height:16px;
+					margin: 0 auto;
+					li {
+						display: inline-block;
+						color: @color1;
+						font-size: @basefontsize*1.5;
+						margin: 0 5px;
+					}
+				}
+			}
+		&#top{
+			background:url("../Images/acidstag(dot)com(edited).jpg") no-repeat;
+			.header-setup;
+		}
+		&#top-tour{
+			background:url("../Images/buzznet(dot)com(edited).jpg") no-repeat;
+			.header-setup;
+		}
+		&#top-about{
+			background:url("../Images/themusic(dot)com(dot)au(edited).jpg") no-repeat;
+			.header-setup;
+		}
 }
-aside#sidebar {
-  	.column(5);
-  	overflow: hidden;
-  	img{
-  		&#tour{
-  			margin: 10px 0;
-  			width:100%;
-  			.border-radius;
-  		}
-  	}
-}
+
 
 section{
 	&#maincolumn{
 		.column(12);
-		margin-top: 10px;
-		max-height: 606px;
-		overflow: auto;
+		.section-setup;
 		h2{
 			margin-bottom: 10px;
 		}
@@ -111,19 +91,23 @@ section{
 				iframe{
 					.column(12);
 				}
-
 				article{
-					.column(12);
-					margin: 10px 0 5px 0;
+					width: 100%;
 					cursor: default;
 					h3{
 						.column(12);
-						color: @color3;
+						color: @color5;
+						padding-top: 10px;
 					}
-					p{
-						line-height: 30px;
+					p{	
+						color: @color3;
+						background: @color2;
+						.border-radius;
+						overflow: hidden;
+						font-weight: @headingfontweight;
 						.column(4);
 						text-align: center;
+						padding: 5px 0;
 					}
 				}
 
@@ -133,11 +117,10 @@ section{
 	}
 	&#aboutLorde{
 		.column(12);
-		max-height:606px;
-		margin-top: 10px;
-		cursor: default;
+		.section-setup;
 		img{
 			.column(3);
+			min-width:150px;
 			.border-radius;
 			margin-top: 10px;
 		}
@@ -152,78 +135,85 @@ section{
 		}
 	}
 	&#tourcolumn {
-  		.column(7);
-  		max-height: 606px;
-  		overflow: auto;
-  		cursor: default;
-  		h2{
-  			margin: 10px 0;
-  		}
-  		ul{
-  			.column(12);
-  			li{
-  				.column(12);
-  				margin: 10px 0;
-  				article.tourEvent{
-  					cursor: default;
-  					section.tourDate{
-  						.column(3);
-  						.border-radius;
-  						width: 100px;
-  						height: 100px;
-  						text-align: center;
-  						padding-bottom: 25px;
-  						margin-bottom: 10px;
-  						background: black;
-  						h2{
-  							color: white;
-  							line-height: 35px;
-  							span{
-  								.column(12);
-  								color: white;
-  							}
-  						}
-  						p{
-  							margin-top: -5px;
-  							font-size: @basefontsize;
-  							line-height: 15px;
-  						}
-  						span.year{
-  							.column(12);
-  							color: @color1;
-  						}
-  			}
+			.column(8);
+			.section-setup;
+			h2{
+				margin: 10px 0;
+			}
+			ul{
+				.column(12);
+				li{
+					.column(12);
+					margin: 10px 0;
+					article.tourEvent{
+						cursor: default;
+						section.tourDate{
+							float:left;
+							.border-radius;
+							width: 75px;
+							height: 100px;
+							text-align: center;
+							margin-bottom: 10px;
+							background: @color2;
+							h2{
+								color: @color3;
+								span{
+									.column(12);
+									padding: 5px 0;
+								}
+							}
+							p{	
+								color: @color1;
+								font-size: @basefontsize;
+							}
+							span.year{
+								.column(12);
+								
+							}
+				}
 
-  			aside.tourInfo{
-  				h3{
-  					.column(9);
-  					span{
-  						.column(12);
-  						color: @navBorderColor;
-  					}
-  				}
+				aside.tourInfo{
+					h3{
+						float: left;
+						width: 65%;
+						margin-left: 10px;
+						span{
+							.column(12);
+							color: @color3;
+							margin: 0;
+						}
+					}
 
-  				button{
-  					.column(5);
-  					height: 30px;
-  					float: right;
-  					.border-radius;
-  					background: @color2;
-  					margin-top: 40px;
-  					a{
-  						padding-top: 3px;
-  						display: block;
-  						width: 100%;
-  						height:100%;
-  					}
-  				}
+					button{
+						.column(5);
+						height: 30px;
+						float: right;
+						.border-radius;
+						background: @color2;
+						margin-top: 40px;
+						a{
+							padding-top: 3px;
+							.full-size-link;
+						}
+					}
 
-  			}
-  			
-  		}
-  	}
+				}
+				
+			}
+		}
 	}
 	}
+}
+aside#sidebar {
+		.column(4);
+		overflow: hidden;
+		img{
+			&#tour{
+				margin: 10px 0;
+				width:100%;
+				.border-radius;
+			}
+		}
 }
 
 footer{
@@ -231,8 +221,9 @@ footer{
 	background: @color2;
 	text-align: center;
 	p{
+		color: @color1;
 		padding: 5px;
-		font-size: @basefontsize*.7;
+		font-size: @basefontsize*.8;
 		cursor:default;
 	}
 }

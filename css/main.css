@@ -1,22 +1,25 @@
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Roboto', sans-serif;
 }
 p {
-  font-size: 16px;
-  color: #3CBDC8;
+  font-size: 13px;
+  color: #393939;
 }
 h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 32px;
-  color: #3cbdc8;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 27.999999999999954px;
+  font-weight: 700;
 }
 h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 21.99999999999997px;
+  font-weight: 700;
 }
 h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 17.99999999999994px;
+  font-weight: 700;
+  color: #393939;
 }
 a {
   color: #3cbdc8;
@@ -38,43 +41,67 @@ body:after {
 body:after {
   clear: both;
 }
+.section-setup {
+  max-height: 606px;
+  margin-top: 10px;
+  overflow: auto;
+  cursor: default;
+}
+.header-setup {
+  height: 175px;
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  background-size: 100% 100%;
+}
+.active-indicator {
+  text-decoration: line-through;
+  font-weight: bold;
+  font-family: 'Droid Sans', sans-serif;
+}
+.full-size-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 /* All images are named from the site at which they were taken from any edited images are also named accordingly with (edited) at the end*/
 .container {
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
-  background: #2BB293;
+  background: #2bb293;
 }
 #active {
   text-decoration: line-through;
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 header h1 {
   display: inline;
   float: left;
-  width: 72.91666666666666%;
+  width: 47.91666666666667%;
   margin: 0 1.0416666666666665%;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 header h1 a {
-  margin: 5px 0 5px 10px;
   color: #898989;
 }
 header h1 a:hover {
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Roboto', sans-serif;
 }
 header aside {
-  display: inline;
-  float: left;
-  width: 22.916666666666664%;
-  margin: 0 1.0416666666666665%;
+  float: right;
   background: url("../Images/getOnItunes.jpg") no-repeat;
   background-size: 100% 100%;
   text-indent: -999999px;
   border-radius: 16%;
+  width: 130px;
   height: 130px;
   margin-top: 5px;
+  margin-right: 10px;
 }
 header aside a {
   display: block;
@@ -86,8 +113,8 @@ header nav {
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  height: 21px;
-  border-bottom: 2px solid #d44072;
+  height: 18px;
+  border-bottom: 3px solid #d44072;
   text-align: center;
   margin-top: 9px;
 }
@@ -98,58 +125,45 @@ header nav ul {
 header nav ul li {
   display: inline-block;
   color: #3cbdc8;
-  font-size: 24px;
+  font-size: 19.5px;
   margin: 0 5px;
 }
 header#top {
+  background: url("../Images/acidstag(dot)com(edited).jpg") no-repeat;
   height: 175px;
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background: url("../Images/acidstag(dot)com(edited).jpg") no-repeat;
   background-size: 100% 100%;
 }
 header#top-tour {
+  background: url("../Images/buzznet(dot)com(edited).jpg") no-repeat;
   height: 175px;
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background: url("../Images/buzznet(dot)com(edited).jpg") no-repeat;
   background-size: 100% 100%;
 }
 header#top-about {
+  background: url("../Images/themusic(dot)com(dot)au(edited).jpg") no-repeat;
   height: 175px;
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background: url("../Images/themusic(dot)com(dot)au(edited).jpg") no-repeat;
   background-size: 100% 100%;
-}
-aside#sidebar {
-  display: inline;
-  float: left;
-  width: 39.58333333333333%;
-  margin: 0 1.0416666666666665%;
-  overflow: hidden;
-}
-aside#sidebar img#tour {
-  margin: 10px 0;
-  width: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 section#maincolumn {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  margin-top: 10px;
   max-height: 606px;
+  margin-top: 10px;
   overflow: auto;
+  cursor: default;
 }
 section#maincolumn h2 {
   margin-bottom: 10px;
@@ -158,7 +172,7 @@ section#maincolumn ul li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #000000;
+  background: #393939;
   display: inline;
   float: left;
   width: 47.91666666666667%;
@@ -172,11 +186,7 @@ section#maincolumn ul li iframe {
   margin: 0 1.0416666666666665%;
 }
 section#maincolumn ul li article {
-  display: inline;
-  float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
-  margin: 10px 0 5px 0;
+  width: 100%;
   cursor: default;
 }
 section#maincolumn ul li article h3 {
@@ -184,15 +194,23 @@ section#maincolumn ul li article h3 {
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  color: #d44072;
+  color: #2bb293;
+  padding-top: 10px;
 }
 section#maincolumn ul li article p {
-  line-height: 30px;
+  color: #d44072;
+  background: #393939;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-weight: 700;
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   text-align: center;
+  padding: 5px 0;
 }
 section#aboutLorde {
   display: inline;
@@ -201,6 +219,7 @@ section#aboutLorde {
   margin: 0 1.0416666666666665%;
   max-height: 606px;
   margin-top: 10px;
+  overflow: auto;
   cursor: default;
 }
 section#aboutLorde img {
@@ -208,16 +227,17 @@ section#aboutLorde img {
   float: left;
   width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
+  min-width: 150px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-top: 10px;
 }
 section#aboutLorde P {
-  color: #000000;
+  color: #393939;
   line-height: 30px;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16.25px;
 }
 section#aboutLorde P a {
   color: #d44072;
@@ -225,9 +245,10 @@ section#aboutLorde P a {
 section#tourcolumn {
   display: inline;
   float: left;
-  width: 56.25%;
+  width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
   max-height: 606px;
+  margin-top: 10px;
   overflow: auto;
   cursor: default;
 }
@@ -251,48 +272,40 @@ section#tourcolumn ul li article.tourEvent {
   cursor: default;
 }
 section#tourcolumn ul li article.tourEvent section.tourDate {
-  display: inline;
   float: left;
-  width: 22.916666666666664%;
-  margin: 0 1.0416666666666665%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  width: 100px;
+  width: 75px;
   height: 100px;
   text-align: center;
-  padding-bottom: 25px;
   margin-bottom: 10px;
-  background: black;
+  background: #393939;
 }
 section#tourcolumn ul li article.tourEvent section.tourDate h2 {
-  color: white;
-  line-height: 35px;
+  color: #d44072;
 }
 section#tourcolumn ul li article.tourEvent section.tourDate h2 span {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  color: white;
+  padding: 5px 0;
 }
 section#tourcolumn ul li article.tourEvent section.tourDate p {
-  margin-top: -5px;
-  font-size: 16px;
-  line-height: 15px;
+  color: #3cbdc8;
+  font-size: 13px;
 }
 section#tourcolumn ul li article.tourEvent section.tourDate span.year {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  color: #3cbdc8;
 }
 section#tourcolumn ul li article.tourEvent aside.tourInfo h3 {
-  display: inline;
   float: left;
-  width: 72.91666666666666%;
-  margin: 0 1.0416666666666665%;
+  width: 65%;
+  margin-left: 10px;
 }
 section#tourcolumn ul li article.tourEvent aside.tourInfo h3 span {
   display: inline;
@@ -300,6 +313,7 @@ section#tourcolumn ul li article.tourEvent aside.tourInfo h3 span {
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   color: #d44072;
+  margin: 0;
 }
 section#tourcolumn ul li article.tourEvent aside.tourInfo button {
   display: inline;
@@ -311,7 +325,7 @@ section#tourcolumn ul li article.tourEvent aside.tourInfo button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #000000;
+  background: #393939;
   margin-top: 40px;
 }
 section#tourcolumn ul li article.tourEvent aside.tourInfo button a {
@@ -320,16 +334,31 @@ section#tourcolumn ul li article.tourEvent aside.tourInfo button a {
   width: 100%;
   height: 100%;
 }
+aside#sidebar {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  overflow: hidden;
+}
+aside#sidebar img#tour {
+  margin: 10px 0;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 footer {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background: #000000;
+  background: #393939;
   text-align: center;
 }
 footer p {
+  color: #3cbdc8;
   padding: 5px;
-  font-size: 11.2px;
+  font-size: 10.4px;
   cursor: default;
 }
